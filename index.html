@@ -365,7 +365,7 @@
       Every morning it forgets who you are. Every conversation, you explain yourself from scratch. Every meeting, you spend fifteen minutes rebuilding context from a hundred scattered tabs. <strong>Openclaw tried to fix that. It was a technology. Mirror is the missing layer.</strong>
     </p>
 
-    <form class="signup" id="signup" action="https://formspree.io/f/your-endpoint" method="POST" novalidate>
+    <form class="signup loops-form" id="signup" action="app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" novalidate>
       <label class="sr" for="email-hero">Email address</label>
       <input type="email" id="email-hero" name="email" placeholder="you@work.com" required autocomplete="email" />
       <input type="hidden" name="source" value="openclaw-ban-hero" />
@@ -587,7 +587,7 @@
   <div class="wrap">
     <h2>Openclaw is gone.<br/>You still deserve an AI that knows you.</h2>
     <p>Join the waitlist for mirror — the missing layer for personal AI.</p>
-    <form class="signup" action="https://formspree.io/f/your-endpoint" method="POST" novalidate>
+    <form class="signup loops-form" action="app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" novalidate>
       <label class="sr" for="email-final">Email address</label>
       <input type="email" id="email-final" name="email" placeholder="you@work.com" required autocomplete="email" />
       <input type="hidden" name="source" value="openclaw-ban-final" />
@@ -617,6 +617,39 @@
     </div>
   </div>
 </footer>
-
+<script>
+  document.querySelectorAll('form.loops-form').forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var emailInput = form.querySelector('input[type="email"]');
+      var sourceInput = form.querySelector('input[name="source"]');
+      var btn = form.querySelector('button[type="submit"]');
+      if (!emailInput || !emailInput.value) return;
+      var originalLabel = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = 'Sending…';
+      var body = 'userGroup=' + encodeURIComponent(sourceInput ? sourceInput.value : '') +
+                 '&mailingLists=' +
+                 '&email=' + encodeURIComponent(emailInput.value);
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body
+      }).then(function(res){
+        if (res.ok) {
+          form.innerHTML = '<div style="padding:18px 22px;border:1px solid rgba(217,70,239,0.4);border-radius:12px;background:rgba(243,232,255,0.15);color:inherit;font-weight:500;">You\u2019re on the list. We\u2019ll be in touch when your beta slot opens.</div>';
+        } else {
+          btn.disabled = false;
+          btn.innerHTML = originalLabel;
+          alert('Something went wrong. Please try again.');
+        }
+      }).catch(function(){
+        btn.disabled = false;
+        btn.innerHTML = originalLabel;
+        alert('Network error. Please try again.');
+      });
+    });
+  });
+</script>
 </body>
 </html>
