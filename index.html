@@ -628,9 +628,7 @@
       var originalLabel = btn.innerHTML;
       btn.disabled = true;
       btn.innerHTML = 'Sending…';
-      var body = 'userGroup=' + encodeURIComponent(sourceInput ? sourceInput.value : '') +
-                 '&mailingLists=' +
-                 '&email=' + encodeURIComponent(emailInput.value);
+      var body = 'userGroup=&mailingLists=&email=' + encodeURIComponent(emailInput.value);
       fetch(form.action, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
