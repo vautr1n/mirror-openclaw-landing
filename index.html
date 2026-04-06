@@ -631,26 +631,9 @@
     form.addEventListener('submit', function(e){
       e.preventDefault();
       var emailInput = form.querySelector('input[type="email"]');
-      var sourceInput = form.querySelector('input[name="source"]');
       var btn = form.querySelector('button[type="submit"]');
       if (!emailInput || !emailInput.value) return;
-      var originalLabel = btn.innerHTML;
-      btn.disabled = true;
-      btn.innerHTML = 'Sending…';
       var body = 'userGroup=&mailingLists=&email=' + encodeURIComponent(emailInput.value);
-      fetch(form.action, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: body
-      }).then(function(res){
-        if (res.ok) {
-          form.innerHTML = '<div style="padding:18px 22px;border:1px solid rgba(217,70,239,0.4);border-radius:12px;background:rgba(243,232,255,0.15);color:inherit;font-weight:500;">You\u2019re on the list. We\u2019ll be in touch when your beta slot opens.</div>';
-          if (window.gtag) {
-            gtag('event', 'conversion', {
-              'send_to': 'AW-18066065136/x84dCKLyqpYcEPCNyaZD',
-              'value': 1.0,
-              'currency': 'EUR'
-            });var body = 'userGroup=&mailingLists=&email=' + encodeURIComponent(emailInput.value);
 
       /* Fire conversion immediately on submit */
       if (window.gtag) {
@@ -665,7 +648,7 @@
       form.innerHTML = '<div style="padding:18px 22px;border:1px solid rgba(217,70,239,0.4);border-radius:12px;background:rgba(243,232,255,0.15);color:inherit;font-weight:500;">You\u2019re on the list. We\u2019ll be in touch when your beta slot opens.</div>';
 
       /* Send to Loops in background */
-      fetch(form.action, {
+      fetch('https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: body
