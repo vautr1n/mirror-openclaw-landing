@@ -650,18 +650,26 @@
               'send_to': 'AW-18066065136/x84dCKLyqpYcEPCNyaZD',
               'value': 1.0,
               'currency': 'EUR'
-            });
-          }
-        } else {
-          btn.disabled = false;
-          btn.innerHTML = originalLabel;
-          alert('Something went wrong. Please try again.');
-        }
-      }).catch(function(){
-        btn.disabled = false;
-        btn.innerHTML = originalLabel;
-        alert('Network error. Please try again.');
-      });
+            });var body = 'userGroup=&mailingLists=&email=' + encodeURIComponent(emailInput.value);
+
+      /* Fire conversion immediately on submit */
+      if (window.gtag) {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18066065136/x84dCKLyqpYcEPCNyaZD',
+          'value': 1.0,
+          'currency': 'EUR'
+        });
+      }
+
+      /* Show success immediately */
+      form.innerHTML = '<div style="padding:18px 22px;border:1px solid rgba(217,70,239,0.4);border-radius:12px;background:rgba(243,232,255,0.15);color:inherit;font-weight:500;">You\u2019re on the list. We\u2019ll be in touch when your beta slot opens.</div>';
+
+      /* Send to Loops in background */
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: body
+      }).catch(function(){});
     });
   });
 </script>
