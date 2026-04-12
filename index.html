@@ -143,7 +143,7 @@
   .sr { position: absolute; left: -9999px; }
 
   /* ========== HEADER ========== */
-  header.top { padding: 26px 0; }
+  header.top { padding: 18px 0; }
   header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
   .logo-link { display: inline-flex; align-items: center; text-decoration: none; }
   .logo-link svg { height: 32px; width: auto; display: block; }
@@ -154,12 +154,12 @@
   nav.menu a:hover { color: var(--near-black); }
 
   /* ========== HERO ========== */
-  .hero { padding: 48px 0 56px; }
+  .hero { padding: 28px 0 40px; }
   .eyebrow {
     display: inline-flex; align-items: center; gap: 10px;
     background: var(--white); color: var(--charcoal);
     font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-    padding: 9px 16px; border-radius: 999px; margin-bottom: 18px;
+    padding: 9px 16px; border-radius: 999px; margin-bottom: 12px;
     border: 1px solid var(--zinc-200);
   }
   .eyebrow .dot {
@@ -171,10 +171,10 @@
   @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(217,70,239,.6)} 70%{box-shadow:0 0 0 12px rgba(217,70,239,0)} 100%{box-shadow:0 0 0 0 rgba(217,70,239,0)} }
 
   h1 {
-    font-size: clamp(40px, 5.5vw, 60px);
-    line-height: 1.04; letter-spacing: -0.035em;
-    margin: 0 0 20px; font-weight: 700;
-    color: var(--near-black); max-width: 18ch;
+    font-size: clamp(36px, 4.5vw, 50px);
+    line-height: 1.06; letter-spacing: -0.035em;
+    margin: 0 0 14px; font-weight: 700;
+    color: var(--near-black); max-width: 20ch;
   }
   h1 em {
     font-style: normal;
@@ -182,9 +182,9 @@
     -webkit-background-clip: text; background-clip: text; color: transparent;
   }
   .lede {
-    font-size: clamp(17px, 1.9vw, 21px);
+    font-size: clamp(16px, 1.8vw, 19px);
     color: var(--zinc-600); max-width: 640px;
-    margin: 0 0 28px; line-height: 1.55;
+    margin: 0 0 18px; line-height: 1.5;
   }
   .lede strong { color: var(--near-black); font-weight: 600; }
 
@@ -194,7 +194,7 @@
     flex: 1 1 260px; min-width: 0;
     background: var(--white); color: var(--near-black);
     border: 1px solid var(--zinc-300); border-radius: var(--radius);
-    padding: 17px 20px; font-size: 16px; font-family: var(--font);
+    padding: 14px 18px; font-size: 16px; font-family: var(--font);
     outline: none; transition: border-color .15s ease, box-shadow .15s ease;
   }
   form.signup input[type="email"]::placeholder { color: var(--zinc-400); }
@@ -203,7 +203,7 @@
   form.signup button.primary {
     background: var(--near-black); color: var(--white);
     border: 0; border-radius: var(--radius);
-    padding: 18px 28px; font-size: 16px; font-weight: 600;
+    padding: 14px 28px; font-size: 16px; font-weight: 600;
     cursor: pointer; letter-spacing: -0.01em; font-family: var(--font);
     transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
     box-shadow: 0 2px 8px rgba(10, 10, 10, 0.12);
@@ -339,7 +339,7 @@
   footer .tagline { font-size: 12px; color: var(--zinc-500); margin-top: 6px; }
 
   @media (max-width: 720px) {
-    .hero { padding-top: 32px; padding-bottom: 40px; }
+    .hero { padding-top: 20px; padding-bottom: 28px; }
     section.block, .final { padding-top: 72px; padding-bottom: 72px; }
     nav.menu { display: none; }
     .pillar-row { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
