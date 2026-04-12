@@ -3,26 +3,19 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <!-- Google Consent Mode — grant by default (no cookie banner) -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {
-    'ad_storage': 'granted',
-    'ad_user_data': 'granted',
-    'ad_personalization': 'granted',
-    'analytics_storage': 'granted'
-  });
-</script>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18066065136"></script>
 <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-18066065136');
 </script>
+
 <!-- SEO: Primary -->
 <title>Openclaw Ban: Anthropic Banned Openclaw — The Alternative | mirror</title>
-<meta name="description" content="Anthropic banned Openclaw from Claude. If you were using it, your AI just lost its memory of you — again. Mirror is the missing layer for personal AI: your memory, your context, institutional-grade security. Join the waitlist." />
+<meta name="description" content="Anthropic banned Openclaw from Claude. If you were using it, your AI just lost its memory of you — again. Mirror is the personal context layer that does what Openclaw couldn't — securely, proactively, and without platform risk. Request early access." />
 <meta name="keywords" content="openclaw ban, openclaw banned, anthropic openclaw, anthropic bans openclaw, claude openclaw, openclaw alternative, openclaw replacement, personal AI memory, AI memory layer, personal context AI, AI that remembers me, mirror AI, bymirror.ai, artificial personal intelligence" />
 <meta name="robots" content="index,follow,max-image-preview:large" />
 <meta name="author" content="mirror" />
@@ -92,7 +85,7 @@
     {"@type":"Question","name":"Does Mirror replace ChatGPT, Claude or Gemini?","acceptedAnswer":{"@type":"Answer","text":"No. Mirror is complementary. ChatGPT, Claude and Gemini are open-ended playgrounds — brilliant, but built on the average of humanity, not on you. Mirror is the personal layer beside them: the memory, the context, the history they were never built with."}},
     {"@type":"Question","name":"How is Mirror different from Openclaw?","acceptedAnswer":{"@type":"Answer","text":"Openclaw is a technology — flat text memory, a weekend of setup, push effort from the user, welded to one model. Mirror is a product — a knowledge graph of people and topics and commitments, proactive by default, working out of the box, and built with platform compliance in mind from day one."}},
     {"@type":"Question","name":"Is Mirror secure?","acceptedAnswer":{"@type":"Answer","text":"Institutional-grade security is the foundation, not an afterthought. Encrypted cloud today, on-device architecture on the roadmap. No training on your private data. Domain separation prevents work context from leaking into personal queries. Full ownership, consent, traceability, auditability."}},
-    {"@type":"Question","name":"When can I use Mirror?","acceptedAnswer":{"@type":"Answer","text":"Private beta is rolling out in waves. Join the waitlist and we'll email you when your slot opens."}}
+    {"@type":"Question","name":"When can I use Mirror?","acceptedAnswer":{"@type":"Answer","text":"Private beta is rolling out in waves. Request early access and we'll email you when your slot opens."}}
   ]
 }
 </script>
@@ -161,12 +154,12 @@
   nav.menu a:hover { color: var(--near-black); }
 
   /* ========== HERO ========== */
-  .hero { padding: 80px 0 104px; }
+  .hero { padding: 48px 0 56px; }
   .eyebrow {
     display: inline-flex; align-items: center; gap: 10px;
     background: var(--white); color: var(--charcoal);
     font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-    padding: 9px 16px; border-radius: 999px; margin-bottom: 28px;
+    padding: 9px 16px; border-radius: 999px; margin-bottom: 18px;
     border: 1px solid var(--zinc-200);
   }
   .eyebrow .dot {
@@ -178,9 +171,9 @@
   @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(217,70,239,.6)} 70%{box-shadow:0 0 0 12px rgba(217,70,239,0)} 100%{box-shadow:0 0 0 0 rgba(217,70,239,0)} }
 
   h1 {
-    font-size: clamp(44px, 7vw, 80px);
-    line-height: 0.98; letter-spacing: -0.038em;
-    margin: 0 0 26px; font-weight: 700;
+    font-size: clamp(40px, 5.5vw, 60px);
+    line-height: 1.04; letter-spacing: -0.035em;
+    margin: 0 0 20px; font-weight: 700;
     color: var(--near-black); max-width: 18ch;
   }
   h1 em {
@@ -189,32 +182,37 @@
     -webkit-background-clip: text; background-clip: text; color: transparent;
   }
   .lede {
-    font-size: clamp(19px, 2.05vw, 23px);
-    color: var(--zinc-600); max-width: 680px;
-    margin: 0 0 40px; line-height: 1.55;
+    font-size: clamp(17px, 1.9vw, 21px);
+    color: var(--zinc-600); max-width: 640px;
+    margin: 0 0 28px; line-height: 1.55;
   }
   .lede strong { color: var(--near-black); font-weight: 600; }
 
   /* CTA */
-  form.signup { display: flex; gap: 10px; max-width: 560px; flex-wrap: wrap; }
+  form.signup { display: flex; gap: 12px; max-width: 560px; flex-wrap: wrap; }
   form.signup input[type="email"] {
-    flex: 1 1 280px; min-width: 0;
+    flex: 1 1 260px; min-width: 0;
     background: var(--white); color: var(--near-black);
     border: 1px solid var(--zinc-300); border-radius: var(--radius);
     padding: 17px 20px; font-size: 16px; font-family: var(--font);
     outline: none; transition: border-color .15s ease, box-shadow .15s ease;
   }
   form.signup input[type="email"]::placeholder { color: var(--zinc-400); }
-  form.signup input[type="email"]:focus { border-color: var(--grad-violet); box-shadow: 0 0 0 3px rgba(139,92,246,.18); }
+  form.signup input[type="email"]:focus { border-color: var(--grad-fuchsia); box-shadow: 0 0 0 4px rgba(217,70,239,.28); }
+  form.signup input[type="email"]:focus::placeholder { color: transparent; }
   form.signup button.primary {
     background: var(--near-black); color: var(--white);
     border: 0; border-radius: var(--radius);
-    padding: 17px 26px; font-size: 16px; font-weight: 600;
+    padding: 18px 28px; font-size: 16px; font-weight: 600;
     cursor: pointer; letter-spacing: -0.01em; font-family: var(--font);
-    transition: transform .15s ease, background .15s ease;
+    transition: transform .15s ease, background .15s ease, box-shadow .15s ease;
+    box-shadow: 0 2px 8px rgba(10, 10, 10, 0.12);
   }
-  form.signup button.primary:hover { background: var(--dark); transform: translateY(-1px); }
-  .consent { color: var(--zinc-500); font-size: 13px; margin-top: 14px; max-width: 560px; }
+  form.signup button.primary:hover { background: var(--grad-fuchsia); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(217, 70, 239, 0.24); }
+  form.signup button.primary:active { transform: translateY(0); box-shadow: 0 2px 8px rgba(217, 70, 239, 0.2); }
+  form.signup button.primary:focus { outline: 2px solid var(--grad-violet); outline-offset: 2px; }
+  @media (max-width: 720px) { form.signup button.primary { min-height: 48px; } }
+  .consent { color: var(--zinc-500); font-size: 13px; margin-top: 10px; max-width: 560px; }
   .consent a { color: var(--zinc-500); }
 
   /* ========== SECTIONS ========== */
@@ -326,8 +324,9 @@
   .final form.signup input[type="email"]:focus { border-color: var(--grad-fuchsia); box-shadow: 0 0 0 3px rgba(217,70,239,.22); }
   .final form.signup button.primary {
     background: var(--gradient); color: var(--white);
+    box-shadow: 0 4px 16px rgba(217, 70, 239, 0.32);
   }
-  .final form.signup button.primary:hover { filter: brightness(1.08); }
+  .final form.signup button.primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(217, 70, 239, 0.4); }
   .final .signature { color: var(--zinc-500); font-size: 14px; margin-top: 36px; }
   .final .signature em { color: var(--zinc-300); font-style: normal; }
 
@@ -340,7 +339,8 @@
   footer .tagline { font-size: 12px; color: var(--zinc-500); margin-top: 6px; }
 
   @media (max-width: 720px) {
-    section.block, .hero, .final { padding-top: 72px; padding-bottom: 72px; }
+    .hero { padding-top: 32px; padding-bottom: 40px; }
+    section.block, .final { padding-top: 72px; padding-bottom: 72px; }
     nav.menu { display: none; }
     .pillar-row { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
     .compare th, .compare td { padding: 14px 16px; font-size: 14px; }
@@ -362,13 +362,11 @@
       </svg>
     </a>
     <nav class="menu" aria-label="Primary">
-      <a href="#manifesto">Manifesto</a>
-      <a href="#what-happened">Openclaw ban</a>
+      <a href="#what-happened">The ban</a>
       <a href="#vs">Vs. Openclaw</a>
       <a href="#product">Product</a>
       <a href="#faq">FAQ</a>
-      <a href="#signup">Waitlist</a>
-      <a href="/blog">Blog</a>
+      <a href="#signup">Early access</a>
     </nav>
   </div>
 </header>
@@ -376,21 +374,19 @@
 <!-- ========== HERO ========== -->
 <section class="hero">
   <div class="wrap">
-    <a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener noreferrer">
-      <span class="eyebrow"><span class="dot"></span> Openclaw has been banned by Anthropic</span>
-    </a>
-    <h1>Your AI doesn't<br/>know <em>you.</em></h1>
+    <span class="eyebrow"><span class="dot"></span> Openclaw has been <a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener" style="color:inherit;text-decoration-color:var(--grad-fuchsia);">banned</a> by Anthropic</span>
+    <h1>Openclaw is gone.<br/>Your AI just got its <em>memory</em> back.</h1>
     <p class="lede">
-      Every morning it forgets who you are. Every conversation, you explain yourself from scratch. Every meeting, you spend fifteen minutes rebuilding context from a hundred scattered tabs. <strong>Openclaw tried to fix that. It was a technology. Mirror is the missing layer.</strong>
+      Anthropic killed Openclaw. <strong>Mirror is the personal context layer your AI should have had from day one</strong> — secure, proactive, built to last.
     </p>
 
     <form class="signup loops-form" id="signup" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" novalidate>
       <label class="sr" for="email-hero">Email address</label>
-      <input type="email" id="email-hero" name="email" placeholder="you@work.com" required autocomplete="email" />
+      <input type="email" id="email-hero" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true" />
       <input type="hidden" name="source" value="openclaw-ban-hero" />
-      <button type="submit" class="primary">Join the waitlist →</button>
+      <button type="submit" class="primary">Get early access →</button>
     </form>
-    <p class="consent">No spam. One email when your beta slot opens, plus the occasional manifesto update. <a href="#">Privacy</a>.</p>
+    <p class="consent"><strong>Limited access</strong> — ~500 spots per wave. We'll email when yours opens. No spam. <a href="#">Privacy</a>.</p>
   </div>
 </section>
 
@@ -398,56 +394,13 @@
 <section id="what-happened" class="block">
   <div class="wrap">
     <div class="kicker">The Openclaw ban, explained</div>
-    <h2>Anthropic banned Openclaw. Now what?</h2>
+    <h2>Anthropic <a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--zinc-300);text-underline-offset:3px;">banned</a> Openclaw. Now what?</h2>
     <p>
-      Openclaw was an open-source attempt to give Claude the one thing it doesn't have: <strong>you</strong>. Thousands of technically-inclined users spent a weekend wiring it up — scraping notes, piping in emails, stitching personal context into every chat — because the alternative was a model that reset to zero every morning. It worked. Until it didn't. Anthropic removed it from the Claude ecosystem because the way it injected context fell outside their platform policies.
+      Openclaw was a weekend project that gave Claude the one thing it didn't have: your memory. Thousands of users wired it up — scraping notes, piping in emails, stitching personal context into every chat — because the alternative was an AI that reset to zero every morning. It worked. Until Anthropic <a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener">banned it</a> because the way it injected context fell outside their platform policies.
     </p>
     <p style="margin-top: 18px;">
-      The ban killed the tool. It did not kill the problem. The problem is that <strong>every large language model on the market — Claude, ChatGPT, Gemini, the open ones — is trained on the average of humanity, not on you</strong>. They are brilliant, open-ended playgrounds. They are not built on your memory, your relationships, your commitments, or the history of what you actually care about. No bolt-on hack was ever going to fix that. The fix has to be a layer. A properly built layer. And that layer should have existed from day one.
+      The <a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener">ban</a> killed the tool. It did not kill the problem. <strong>Every AI on the market resets to zero every morning.</strong> They're trained on the average of humanity, not on you. Not on your relationships, your commitments, or the history of what you actually care about. No bolt-on hack was ever going to fix that. The fix has to be a layer. A properly built layer. And that layer should have existed from day one.
     </p>
-  </div>
-</section>
-
-<!-- ========== MANIFESTO ========== -->
-<section id="manifesto" class="block tinted manifesto">
-  <div class="wrap">
-    <div class="kicker">The Manifesto</div>
-    <h2>The missing layer for personal AI.</h2>
-
-    <p class="intro">
-      Mirror exists because artificial general intelligence — trained on the sum of humanity — will never, by construction, know the singular person in front of it. That requires something different. Something smaller in scope and infinitely larger in stakes. We call it <strong>Artificial Personal Intelligence</strong>: not trained on humanity, trained on you. Four things make it real.
-    </p>
-
-    <div class="pillars-four">
-      <div class="pillar-row">
-        <div class="num">01 — Memory</div>
-        <div>
-          <h3>An AI that remembers.</h3>
-          <p>Today's assistants are goldfish. They start every conversation from zero and forget you the moment you close the tab. Mirror is the persistent memory they refuse to build: who you are, who you work with, what you've decided, what you've promised, what's unresolved. It compounds quietly in the background, and it's yours forever.</p>
-        </div>
-      </div>
-      <div class="pillar-row">
-        <div class="num">02 — Context</div>
-        <div>
-          <h3>Your life, reconciled.</h3>
-          <p>Your context is not in one place. It's scattered across Gmail, Google Calendar, Slack, Notion, your notes, your meeting transcripts, your phone, your head. Mirror connects to the apps you already use and reconciles the fragments into a single graph of people, topics, relationships, and commitments — so the signal stops drowning in the noise.</p>
-        </div>
-      </div>
-      <div class="pillar-row">
-        <div class="num">03 — Push</div>
-        <div>
-          <h3>Proactive, not pull.</h3>
-          <p>You shouldn't have to ask for your own context. Mirror pushes what matters the moment you need it — five minutes before the meeting with the right briefing, every morning with the day's cognitive map, the instant a pattern across your interactions is worth surfacing. Context arrives. You don't go looking for it.</p>
-        </div>
-      </div>
-      <div class="pillar-row">
-        <div class="num">04 — Security</div>
-        <div>
-          <h3>Institutional-grade by architecture.</h3>
-          <p>Your memory is the most sensitive data you own. Mirror is encrypted in transit and at rest, domain-separated to keep work and personal context from ever touching, and architected for on-device processing as the north star. No training on your private data. Full ownership. Consent. Traceability. Auditability. Security is not a feature — it's the foundation the rest of the product stands on.</p>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -469,9 +422,64 @@
           <tr><th scope="row">Memory architecture</th><td class="openclaw">Flat text dump stuffed into a prompt</td><td class="mirror">Living graph of people, topics & commitments</td></tr>
           <tr><th scope="row">Coverage</th><td class="openclaw">Whatever you manually fed it</td><td class="mirror">Email, calendar, notes, meetings — reconciled</td></tr>
           <tr><th scope="row">Security</th><td class="openclaw">Whatever you cobbled together</td><td class="mirror">Institutional-grade by architecture</td></tr>
-          <tr><th scope="row">Platform risk</th><td class="openclaw">Banned.</td><td class="mirror">Built to last. Compliance from day one.</td></tr>
+          <tr><th scope="row">Platform risk</th><td class="openclaw"><a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener" style="color:inherit;">Banned.</a></td><td class="mirror">Built to last. Compliance from day one.</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <!-- Inline CTA — catches readers who've seen enough at the comparison -->
+    <div style="margin-top: 48px; padding: 40px; background: var(--lavender); border-radius: var(--radius); text-align: center; border: 2px solid rgba(139,92,246,0.3);">
+      <p style="font-weight: 600; font-size: 18px; color: var(--near-black); margin: 0 0 6px;">Seen enough?</p>
+      <p style="color: var(--zinc-600); font-size: 15px; margin: 0 0 20px;">Private beta rolling out now. Reserve your spot.</p>
+      <form class="signup loops-form" style="justify-content: center; max-width: 480px; margin: 0 auto;" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" novalidate>
+        <label class="sr" for="email-mid">Email address</label>
+        <input type="email" id="email-mid" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true" />
+        <input type="hidden" name="source" value="openclaw-ban-mid-vs" />
+        <button type="submit" class="primary">Get early access →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MANIFESTO ========== -->
+<section id="manifesto" class="block tinted manifesto">
+  <div class="wrap">
+    <div class="kicker">Why Mirror exists</div>
+    <h2>The missing layer for personal AI.</h2>
+
+    <p class="intro">
+      AGI — trained on the sum of humanity — will never know the singular person in front of it. That requires <strong>Artificial Personal Intelligence</strong>: not trained on humanity, trained on you. Four pillars make it real.
+    </p>
+
+    <div class="pillars-four">
+      <div class="pillar-row">
+        <div class="num">01 — Memory</div>
+        <div>
+          <h3>An AI that remembers.</h3>
+          <p>Who you are, who you work with, what you've decided, what's unresolved. Openclaw tried flat text dumps. Mirror builds a persistent, compounding memory — yours forever.</p>
+        </div>
+      </div>
+      <div class="pillar-row">
+        <div class="num">02 — Context</div>
+        <div>
+          <h3>Your life, reconciled.</h3>
+          <p>Email, calendar, notes, meeting transcripts — reconciled into a single graph of people, topics, and commitments. Where Openclaw needed you to manually feed it, Mirror connects and works.</p>
+        </div>
+      </div>
+      <div class="pillar-row">
+        <div class="num">03 — Push</div>
+        <div>
+          <h3>Proactive, not pull.</h3>
+          <p>Context arrives before you need it — five minutes before the meeting, every morning as a cognitive map. No querying. No copy-paste. Mirror pushes, you decide.</p>
+        </div>
+      </div>
+      <div class="pillar-row">
+        <div class="num">04 — Security</div>
+        <div>
+          <h3>Institutional-grade by architecture.</h3>
+          <p>Encrypted, domain-separated, architected for on-device processing. No training on your private data. Security is the foundation — not an afterthought bolted on like Openclaw's DIY approach.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -481,7 +489,7 @@
   <div class="wrap">
     <div class="kicker">The Product</div>
     <h2>How the missing layer shows up in your day.</h2>
-    <p>Mirror doesn't ask you to change your workflow. It quietly builds the memory underneath it, and then it starts giving that memory back to you — at the moments it actually matters. Here's what that looks like.</p>
+    <p>Mirror doesn't ask you to change your workflow. It quietly builds the memory underneath it, and then it starts giving that memory back to you — at the moments it actually matters.</p>
 
     <div class="features">
       <div class="feat">
@@ -524,7 +532,7 @@
     <div class="kicker">How it fits</div>
     <h2>Not a replacement for ChatGPT. The layer beside it.</h2>
     <p>
-      ChatGPT, Claude, Gemini — they're brilliant, open-ended playgrounds. They are also, by construction, not built on you. They're trained on the average of humanity and they reset every time you open a new chat. Mirror doesn't try to replace them. Mirror is the <strong>personal memory layer beside them</strong> — the context you carry with you across every tool, so when you show up in any of those playgrounds, you show up as yourself.
+      ChatGPT, Claude, Gemini — they're brilliant but stateless. Every chat is a fresh start, trained on everyone, optimized for no one. Mirror doesn't try to replace them. Mirror is the <strong>personal context layer beside them</strong> — the context you carry with you across every tool, so when you show up in any of those playgrounds, you show up as yourself.
     </p>
 
     <div class="stack">
@@ -553,15 +561,24 @@
   </div>
 </section>
 
+<!-- ========== TRUST / TEAM ========== -->
+<section class="block">
+  <div class="wrap">
+    <div class="kicker">Who's building this</div>
+    <h2>Not a side project. Not a wrapper.</h2>
+    <p>Mirror is built by a seasoned team of senior engineers, product leaders, and operators from <strong>Stanford, Microsoft, Amazon</strong>, and publicly listed consumer companies. We've shipped security infrastructure at cloud scale, taught NLP and deep learning at research level, and taken products from zero to IPO. This isn't our first build — it's the one that matters most.</p>
+  </div>
+</section>
+
 <!-- ========== FAQ ========== -->
 <section id="faq" class="block tinted">
   <div class="wrap">
     <div class="kicker">Frequently asked</div>
-    <h2>About the Openclaw ban, and about Mirror.</h2>
+    <h2>About the Openclaw <a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:var(--zinc-300);text-underline-offset:3px;">ban</a>, and about Mirror.</h2>
 
     <details>
-      <summary>Why was Openclaw banned by Anthropic?</summary>
-      <p>Openclaw was removed from the Claude ecosystem because the way it injected user context into Claude fell outside Anthropic's platform policies. The ban is about how context was delivered, not about whether users should have personal context. The underlying need has not gone away.</p>
+      <summary>Why was Openclaw <a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">banned</a> by Anthropic?</summary>
+      <p>Openclaw was removed from the Claude ecosystem because the way it injected user context into Claude fell outside Anthropic's platform policies. The <a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener">ban</a> is about how context was delivered, not about whether users should have personal context. The underlying need has not gone away.</p>
     </details>
 
     <details>
@@ -580,7 +597,7 @@
     </details>
 
     <details>
-      <summary>Will Mirror get banned too?</summary>
+      <summary>Will Mirror get <a href="https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">banned</a> too?</summary>
       <p>We designed for that possibility from day one. Mirror doesn't modify or intercept third-party AI apps. Your context lives on your side of the wall and compounds over time. We are building this to last.</p>
     </details>
 
@@ -596,7 +613,7 @@
 
     <details>
       <summary>When can I use Mirror?</summary>
-      <p>Private beta is rolling out in waves. Drop your email below and we'll send you updates on Artificial Personal Intelligence, plus an invite when your slot opens.</p>
+      <p>Private beta is rolling out in waves — about 50 people per month. Get early access above and we'll email you when your slot opens.</p>
     </details>
   </div>
 </section>
@@ -604,15 +621,15 @@
 <!-- ========== FINAL CTA — dark sandwich ========== -->
 <section class="block dark final">
   <div class="wrap">
-    <h2>Openclaw is gone.<br/>You still deserve an AI that knows you.</h2>
-    <p>Join the waitlist for mirror — the missing layer for personal AI.</p>
-    <form class="signup loops-form" action="app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" novalidate>
+    <h2>Openclaw is gone.<br/>The layer that replaces it isn't.</h2>
+    <p>Mirror pushes context before you need it. Private beta rolling out now.</p>
+    <form class="signup loops-form" action="https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7" method="POST" novalidate>
       <label class="sr" for="email-final">Email address</label>
-      <input type="email" id="email-final" name="email" placeholder="you@work.com" required autocomplete="email" />
+      <input type="email" id="email-final" name="email" placeholder="name@company.com" required autocomplete="email" autocapitalize="off" spellcheck="false" aria-required="true" />
       <input type="hidden" name="source" value="openclaw-ban-final" />
-      <button type="submit" class="primary">Join the waitlist →</button>
+      <button type="submit" class="primary">Get early access →</button>
     </form>
-    <p class="signature">You're already whole. <em>mirror illuminates what's been in the dark.</em></p>
+    <p class="consent" style="color: var(--zinc-500); font-size: 13px; margin-top: 14px; text-align: center;">One email when your beta slot opens. Unsubscribe anytime.</p>
   </div>
 </section>
 
@@ -631,22 +648,28 @@
     <div>
       © 2026 mirror &nbsp;·&nbsp;
       <a href="mailto:contact@bymirror.ai">contact@bymirror.ai</a> &nbsp;·&nbsp;
-      <a href="/blog">Blog</a> &nbsp;·&nbsp;
       <a href="/privacy">Privacy</a> &nbsp;·&nbsp;
       <a href="/terms">Terms</a>
     </div>
   </div>
 </footer>
+
 <script>
+  // Loops form handler — submits via fetch, keeps user on page, shows inline success
   document.querySelectorAll('form.loops-form').forEach(function(form){
     form.addEventListener('submit', function(e){
       e.preventDefault();
       var emailInput = form.querySelector('input[type="email"]');
+      var sourceInput = form.querySelector('input[name="source"]');
       var btn = form.querySelector('button[type="submit"]');
+      var consent = form.parentNode.querySelector('.consent');
       if (!emailInput || !emailInput.value) return;
+      var originalLabel = btn.innerHTML;
+      btn.disabled = true;
+      btn.innerHTML = 'Sending…';
       var body = 'userGroup=&mailingLists=&email=' + encodeURIComponent(emailInput.value);
 
-      /* Fire conversion immediately on submit */
+      /* Fire conversion immediately on submit — don't wait for Loops response */
       if (window.gtag) {
         gtag('event', 'conversion', {
           'send_to': 'AW-18066065136/x84dCKLyqpYcEPCNyaZD',
@@ -655,11 +678,11 @@
         });
       }
 
-      /* Show success immediately */
-      form.innerHTML = '<div style="padding:18px 22px;border:1px solid rgba(217,70,239,0.4);border-radius:12px;background:rgba(243,232,255,0.15);color:inherit;font-weight:500;">You\u2019re on the list. We\u2019ll be in touch when your beta slot opens.</div>';
+      /* Show success immediately — Loops registers the email even if response is slow */
+      form.innerHTML = '<div style="padding:18px 22px;border:1px solid rgba(217,70,239,0.4);border-radius:12px;background:rgba(243,232,255,0.15);color:inherit;font-weight:500;"><strong style="color:var(--grad-fuchsia);">\u2713 You\u2019re in.</strong> We\u2019ll email you when your beta slot opens.</div>';
 
-      /* Send to Loops in background */
-      fetch('https://app.loops.so/api/newsletter-form/cmnlu7ayg07z00iwlsnoqwfv7', {
+      /* Send to Loops in background — fire and forget */
+      fetch(form.action, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: body
@@ -667,5 +690,6 @@
     });
   });
 </script>
+
 </body>
 </html>
