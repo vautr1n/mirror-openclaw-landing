@@ -13,6 +13,13 @@
   gtag('config', 'AW-18066065136');
 </script>
 
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LDZDKP6XZ"></script>
+<script>gtag('config', 'G-0LDZDKP6XZ');</script>
+
+<!-- Plausible — uncomment when account is set up -->
+<!-- <script defer data-domain="bymirror.ai" src="https://plausible.io/js/script.js"></script> -->
+
 <!-- SEO: Primary -->
 <title>Openclaw Ban: Anthropic Banned Openclaw — The Alternative | mirror</title>
 <meta name="description" content="Anthropic banned Openclaw from Claude. If you were using it, your AI just lost its memory of you — again. Mirror is the personal context layer that does what Openclaw couldn't — securely, proactively, and without platform risk. Request early access." />
@@ -689,6 +696,46 @@
       }).catch(function(){});
     });
   });
+</script>
+
+<!-- Funnel Tracking: scroll_50, cta_visible, form_focus -->
+<script>
+(function() {
+  // scroll_50 — fires when user scrolls past 50% of page
+  var scrollFired = false;
+  window.addEventListener('scroll', function() {
+    if (scrollFired) return;
+    var scrollPct = (window.scrollY + window.innerHeight) / document.body.scrollHeight;
+    if (scrollPct >= 0.5) {
+      scrollFired = true;
+      if (typeof gtag === 'function') gtag('event', 'scroll_50', { page: window.location.pathname });
+    }
+  }, { passive: true });
+
+  // cta_visible — fires when the first signup form enters viewport
+  var ctaObserved = false;
+  var ctaEl = document.querySelector('form.signup, form.loops-form');
+  if (ctaEl && 'IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting && !ctaObserved) {
+        ctaObserved = true;
+        if (typeof gtag === 'function') gtag('event', 'cta_visible', { page: window.location.pathname });
+        obs.disconnect();
+      }
+    }, { threshold: 0.5 });
+    obs.observe(ctaEl);
+  }
+
+  // form_focus — fires when user clicks into any email input
+  var focusFired = false;
+  document.querySelectorAll('input[type="email"]').forEach(function(input) {
+    input.addEventListener('focus', function() {
+      if (focusFired) return;
+      focusFired = true;
+      if (typeof gtag === 'function') gtag('event', 'form_focus', { page: window.location.pathname });
+    });
+  });
+})();
 </script>
 
 </body>
